@@ -48,14 +48,6 @@ public class TrzeciaAktywnosc extends AppCompatActivity {
 
     public void powrot(View view){
 
-        EditText poleTekstowe = (EditText) findViewById(R.id.wiadomoscWysylanie1);
-        String wiadomosc = poleTekstowe.getText().toString();
-
-        Intent intencja = new Intent();
-        intencja.putExtra(MainActivity.KLUCZ_WIADOMOSCI, wiadomosc);
-
-        setResult(MainActivity.KOD_PROSBY, intencja);
-
         finish();
 
     }
